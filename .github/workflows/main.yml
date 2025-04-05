@@ -33,7 +33,7 @@ jobs:
             if [ ! -d CICD1 ]; then
               git clone git@github.com:Sunnyday911/CICD.git CICD1;
             fi &&
-            cd CICD &&
+            cd CICD1 &&
             git pull origin main &&
             docker compose down ||
             true &&
