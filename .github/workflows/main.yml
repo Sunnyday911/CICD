@@ -30,8 +30,8 @@ jobs:
     - name: Deploy to vps
       run: |
         ssh -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "
-            if [ ! -d CICD ]; then
-              git clone git@github.com:Sunnyday911/CICD.git CICD;
+            if [ ! -d CICD1 ]; then
+              git clone git@github.com:Sunnyday911/CICD.git CICD1;
             fi &&
             cd CICD &&
             git pull origin main &&
