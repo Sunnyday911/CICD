@@ -1,4 +1,4 @@
-##Laporan Praktikum
+<h1>Laporan Praktikum</h1>
 
 <h3>Server.js</h3>
 
@@ -122,4 +122,4 @@ jobs:
           "
 ```
 
-Nama  workflow ini adalah deploy dan akan jalan setiap ada push di brach main. Kemudian kode akan di check di action. Kemudian menginstall node.js agar bisa menjalankannya. menginstall dependecies segala keperluan. Kemudian setup SSH agar github action bisa mengakses VPS dengan mencantumkan Private SS_KEY. Setelah itu Depoy ke VPS. Masukkan VPS_UER DAN VPS_HOST. Kemudian mengecek pada server VPS apakah ada direktori CICD1. jika tidak ada maka akan di buat. Seteah itu tarik update terbaru dari branch main. Hentikan container lama dan bangun ulang dan jalankan container baru.
+Nama  workflow ini adalah deploy dan akan jalan setiap ada push di brach main. Kemudian kode akan di check di action. Kemudian menginstall node.js agar bisa menjalankannya. menginstall dependecies segala keperluan. Kemudian setup SSH agar github action bisa mengakses VPS dengan mencantumkan Private SS_KEY. Setelah itu Depoy ke VPS. Masukkan VPS_UER DAN VPS_HOST. Kemudian mengecek pada server VPS apakah ada direktori CICD1. jika tidak ada maka akan di buat direktori dan akan clone repository dari github menuju direktori. Setelah itu tarik update terbaru dari branch main. Hentikan container lama dan bangun ulang dan jalankan container baru.
