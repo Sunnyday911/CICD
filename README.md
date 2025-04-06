@@ -1,7 +1,7 @@
 <h1>Laporan Praktikum </h1>
 
 <h3>Server.js</h3>
-Pada server.js ini dibuat untuk mengecek kesehatan dari server dengan API dari server ini adalah `/health`. 
+Api ini dibuat dengan menggunakan Node.js dan Express.js. Endpoint `/health`
 
 ```javascript
 const { timeStamp } = require('console');
