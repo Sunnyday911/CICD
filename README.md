@@ -59,7 +59,7 @@ CMD ["node", "server.js"]
 
 Dockerfile disini dibuat untuk otomasi proses dan  menyamakan lingkungan yang ada di server dengan yang ada di laptop.
 
-Disini di mulai dengan image dasar untuk Node.js yaitu alpine. kemudian kita setup WORKDIR nya pada directory /app. kemudian copy `package*.json` karena untuk npm install bisa berjalan membutuhkan itu. sELANJUTNYA `npm install --prouction`.Selanjutnya copy semua file ke dalam container
+Disini di mulai dengan image dasar untuk Node.js yaitu alpine. kemudian kita setup WORKDIR nya pada directory /app. kemudian copy `package*.json` karena untuk npm install bisa berjalan membutuhkan itu. Selanjutnya `npm install --prouction`.Selanjutnya copy semua file ke dalam container
 
 Kemudian di membikin image baru dengan `alpine`. Keudina kita ke directory app. dan kita copy hasil build image di container 1 ke container ke 2. Kita kasih tau docker kalau server ini berjalan di port 3000. Setelah itu kita berikan command node server.js di akhir untuk run aplikasi.
 
