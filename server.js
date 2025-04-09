@@ -6,7 +6,7 @@ const app = express();
 
 const start = Date.now()
 
-app.get('/health', (req, res) =>{
+app.get('/health-check', (req, res) =>{
     const data = {
         nama: "Sanie Ghanda Prawira",
         nrp: "5025231009",
